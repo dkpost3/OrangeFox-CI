@@ -2,16 +2,16 @@
 
 # Device
 export FOX_BRANCH="fox_12.1" #версия OF
-export DT_LINK="https://github.com/dkpost3/device_xiaomi_lisa.git -b fox_12.1" # дерево устройства
+export DT_LINK="https://github.com/OrangeFoxRecovery/device_xiaomi_garden-R.git -b fox_11.0" # дерево устройства
 
-export DEVICE="lisa" #кодовое имя вашего устройства
+export DEVICE="garden" #кодовое имя вашего устройства
 export OEM="xiaomi" #производитель вашего смартфона
 
 # Build Target - что будем собирать
 ## "recoveryimage" - for A-Only Devices without using Vendor Boot - старые устройства
 ## "bootimage" - for A/B devices without recovery partition (and without vendor boot) - современные устройства
 ## "vendorbootimage" - for devices Using vendor boot for the recovery ramdisk (Usually for devices shipped with Android 12 or higher) - это нам не надо
-export TARGET="adbd bootimage"
+export TARGET="adbd recoveryimage"
 
 export OUTPUT="OrangeFox*.zip"
 
